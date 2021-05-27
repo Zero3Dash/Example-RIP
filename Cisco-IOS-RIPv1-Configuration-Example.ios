@@ -1,0 +1,8 @@
+!
+ip routing
+!
+router rip
+ network [[classful-nework-address]]
+ passive-interface [[interface-id]]
+ exit
+!

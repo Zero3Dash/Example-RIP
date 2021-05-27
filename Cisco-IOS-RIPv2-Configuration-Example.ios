@@ -1,0 +1,25 @@
+!
+ip routing
+!
+router rip
+ version 2
+ no auto-summary
+ network [[classless-nework-address]]
+ passive-interface [[interface-id]]
+ exit
+!
+!
+! ** Authentication for RIP interfaces **
+!
+configure terminal
+key chain RIP
+ key 1
+  key-string [[pre-shared-key]]
+  exit
+ exit
+!
+interface [[interface-id]]
+ ip rip authentication mode md5
+ ip rip authentication key-chain RIP
+ end
+!
