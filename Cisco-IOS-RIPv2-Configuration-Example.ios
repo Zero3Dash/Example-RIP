@@ -4,7 +4,7 @@ ip routing
 router rip
  version 2
  no auto-summary
- network [[classless-nework-address]]
+ network [[classless-network-address]]
  passive-interface [[interface-id]]
  exit
 !

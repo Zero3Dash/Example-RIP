@@ -2,7 +2,7 @@
 ip routing
 !
 router rip
- network [[classful-nework-address]]
+ network [[classful-newtork-address]]
  passive-interface [[interface-id]]
  exit
 !
