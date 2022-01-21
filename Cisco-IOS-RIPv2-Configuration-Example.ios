@@ -4,9 +4,10 @@ ip routing
 router rip
  version 2
  no auto-summary
- network [[classless-network-address]]
+ passive-interface default
  passive-interface [[interface-id]]
- exit
+ network [[classless-network-address]]
+exit
 !
 !
 ! ** Authentication for RIP interfaces **
