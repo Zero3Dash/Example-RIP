@@ -5,7 +5,7 @@ router rip
  version 2
  no auto-summary
  passive-interface default
- passive-interface [[interface-id]]
+ no passive-interface [[interface-id]]
  network [[classless-network-address]]
 exit
 !
